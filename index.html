@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body> 
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">Final Project</h1>
+        <p id="description" class="description text-center">Thank you for taking this survey to help me improve my coading!</p>
+      </header>
+
+
+      <form id="survey-form">
+        <div class="form1">
+          <label id="name" for="name">Name</label>
+          <input type="text" name="name" id="name" class="form-style" placeholder="Enter your name" required/>
+          </div>
+
+        <div class="form1">
+          <label id="email" for="email">Email</label>
+          <input type="email" name="email" id="email" class="form-style" placeholder="Enter your Email" required/>
+        </div>
+
+        <div class="form1">
+          <label id="age" for="age">Age</label>
+          <input type="number" name="age" id="age" min="18" max="99" class="form-style" placeholder="Age" required/>
+        </div>
+
+        <div class="form1">
+          <label id="age" for="age">Select yor rol</label>
+          <select id="dropdown" name="dropdown" class="form-style" required>
+            <option disabled selected value>I'm a...</option>
+            <option value="instructor">Instructor</option>
+            <option value="student">Student</option>
+            <option value="user">Random User</option>
+          </select>
+        </div>
+
+
+        <div class="form1">
+          <p>What's your coding skill level?</p>
+          <label><input name="level" value="beginner" type="radio" class="radio-style" checked/>Beginner</label>
+
+          <label><input name="level" value="advanced beginner" type="radio" class="radio-style"/>Advanced Beginner</label>
+
+          <label><input name="level" value="intermediate" type="radio" class="radio-style"/>Intermediate</label>
+
+          <label><input name="level" value="advanced" type="radio" class="radio-style"/>Advanced</label>
+
+          <label><input name="level" value="expert" type="radio" class="radio-style"/>Expert</label>
+        </div>
+
+
+        <div class="form1">
+          <p>What  your favorite coding languages?</p>
+          <select id="season" name="season" class="form-style" required>
+            <option disabled selected value>Select one</option>
+            <option value="java">Java</option>
+            <option value="python">Python</option>
+            <option value="php">PHP</option>
+            <option value="c++">C++</option>
+            <option value="ruby">Ruby</option>
+          </select>
+        </div>
+
+
+        <div class="form1">
+          <p>Are you interested in any of the following sports?</p>
+
+          <label><input name="fav" value="tennis" type="checkbox" class="checkbox-style"/>Tennis</label>
+
+          <label><input name="fav" value="soccer" type="checkbox" class="checkbox-style"/>Soccer</label>
+
+          <label><input name="fav" value="basketball" type="checkbox" class="checkbox-style"/>Basketball</label>
+
+          <label><input name="fav" value="baseball" type="checkbox" class="checkbox-style"/>Baseball</label>
+
+          <label><input name="fav" value="skiing" type="checkbox" class="checkbox-style"/>Skiing</label>
+
+          <label><input name="fav" value="swimming" type="checkbox" class="checkbox-style"/>Swimming</label>
+
+          <label><input name="fav" value="football" type="checkbox" class="checkbox-style"/>Football</label> 
+        </div>
+
+
+        <div class="form1">
+          <p>Please leave a comment about my project.</p>
+          <textarea id="comment" class="textarea-style" name="comment" placeholder="Thanks for your time and opinion :)"></textarea>
+        </div>
+
+        <div class="form1">
+          <button name= "submit" type="submit" id="submit" class="button-style">Submit!</button>
+        </div>
+
+        <hr class="bottom-line">
+      <footer>
+        <p class="footer-style">Have a nice day!! </p>
+        <p class="footer-style">ECM2023</p>
+      </footer>
+      </form>
+    </div>
+  </body>
+</html>
